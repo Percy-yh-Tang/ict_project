@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>第二課|BOOK A2 CH5網上課程</title>
+		<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Emblem_of_the_Po_Leung_Kuk.svg/1200px-Emblem_of_the_Po_Leung_Kuk.svg.png">
+		<meta charst="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+				background-image: url('https://wallpaperaccess.com/full/685208.jpg');
+				background-attachment: fixed;
+			}
+				
+			nav {
+				top: 0px;
+				width: 100%;
+				height: 100px;
+				background-color: grey;
+				background-color:rgba(77,115,121,0.8);
+				text-align: center;
+				position: sticky;
+				display: block;
+				padding-top: 6px;
+			}
+			
+			.c1 {
+				text-align: center;
+				margin: 0px;
+			}
+			
+			a {
+				color: white;
+				font-family: 微軟正黑體, sans-serif;
+				text-decoration: none;
+				font-size: 20px;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			a:hover {
+				text-decoration: underline;
+			}
+			
+			article {
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+			
+			.Intro h1 {
+				color: white;
+				font-family: 微軟正黑體, sans-serif;
+				font-size: 40px;
+				text-shadow: 2px 2px 29px rgba(0,0,0,1);
+			}
+			
+			.caput h1 {
+				color: white;
+				font-family: 微軟正黑體, sans-serif;
+				font-size: 20px;
+				text-shadow: 1px 3px 17px rgba(0,0,0,1);
+			}
+			
+			.Intro{
+				padding: 5px;
+			}
+			
+			.alpha {
+				margin-left: auto;
+				margin-right: auto;
+				width: 90%;
+				background-color:rgba(140,191,165,0.95);
+				box-shadow: -1px 1px 38px 0px rgba(0,0,0,1);
+				-webkit-box-shadow: -1px 1px 38px 0px rgba(0,0,0,1);
+				-moz-box-shadow: -1px 1px 38px 0px rgba(0,0,0,1);
+				padding-bottom: 50px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+						
+			footer {
+				margin-top: 20px;
+				height: 300px;
+				background-color: rgba(0, 0, 0, 0.8);
+				color: white;
+				font-family: monospace;
+				text-align: center;
+				font-size: 15px;
+			}
+			
+			header {
+				margin-top: 200px;
+				padding-left: 10px;
+			}
+			
+			header h1 {
+				color: white;
+				text-shadow: 2px 2px 29px rgba(0,0,0,1);
+				font-size: 45px;
+				font-family: sans-serif;
+			}
+			
+			table img:hover {
+				width: 300px;
+			}
+			
+			table img {
+				transition: width 2s;
+			}
+			
+			.ante {
+				float: left;
+			}
+			
+			.post {
+				float: right;
+				}
+				
+			.demo {
+				background-color: white;
+			}
+			
+			.demo table {
+				width: 100%;
+			}
+			
+			.demo td {
+				border-radius: 2px;
+				border: 1px solid black;
+				margin-left: 10px;
+			}
+			
+			th {
+				text-align: left;
+				background-color: grey;
+				border-radius: 2px;
+				border: 1px solid black;
+				margin-left: 10px;
+			}
+			
+		</style>
+		<script>
+			
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Lesson 2<br>數據表</h1>
+		</header>
+		<nav>
+			<a href="index.html">
+				<div class="caput">
+					<center><h1>BOOK A2 CH5網上課程</h1><a href="lesson 1.html">第一課</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i><b>第二課</b></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="lesson 3.html">第三課</a></center>
+				</div>
+			</a>
+		</nav>
+		<article class="alpha">
+			<center><img src="https://www.quackit.com/pix/database/tutorial/about_database_tables_1.png" width="80%"></center>
+			<h2>記識數據表</h2>
+			<p>數據表是在Access物件中最為重要的，它跟Excel中的工作表十分相似，使用方式也大同小異。然而，Access中並不會儲存儲存格地址。</p>
+			<p>在Access中，每一欄都是一個<b>欄位</b>，每一列都是一項<b>記錄</b>。</p>
+			<center><img src="https://cdn.discordapp.com/attachments/1084042059863826444/1094902248783478814/lesson_2.png" width="80%"></center>
+			<ol>
+				<li>記錄的列</li>
+				<li>記錄的數據</li>
+				<li>記錄的欄位</li>
+			</ol>
+			<h2>表單</h2>
+			<p>表單為我們提供清晰易用的介面，以便管理數據表中的數據。</p>
+			<p>表單每次只會顯示一項紀錄，以下是一個表單的例子。</p>
+			<div class="demo">
+				<table>
+					<th colspan="2">Student</th>
+					<tr>
+						<td>ID</td><td>1</td>
+					</tr>
+					<tr>
+						<td>SID</td><td>034930</td>
+					</tr>
+					<tr>
+						<td>CNAME</td><td>陳大文</td>
+					</tr>
+					<tr>
+						<td>ENAME</td><td>CHAN Tai-man</td>
+					</tr>
+					<tr>
+						<td>SEX</td><td>M</td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			<a href="lesson 1.html">
+				<button type="button" class="ante">上一課</button>
+			</a>
+			<a href="lesson 3.html">
+				<button class="post">下一課</button>
+			</a>
+		</article>
+		<footer>
+			<br><br>
+			<br><br>2022-2023<br><br>Percy Tang&reg;<br><br>Po Leung Kuk Ma Kam Ming College<br><br><i>35 Wah Ming Road, Fanling, Hong Kong<i><br><br><br><br>
+		</footer>
+</html>
